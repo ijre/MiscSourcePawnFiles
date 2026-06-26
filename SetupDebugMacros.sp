@@ -1,6 +1,13 @@
-#if !defined _DEBUG
-  #define _DEBUG 0
+#if !defined DEFAULT_DEBUG
+  #error DEFAULT_DEBUG not set!!
+  #endinput
 #endif
 
-#define NDEBUG (defined _DEBUG && (_DEBUG==0))
-#define DEBUG  (defined _DEBUG && (_DEBUG==1))
+
+#if defined _DEBUG
+  #if _DEBUG==1
+    #define DEBUG true
+  #endif
+#else
+  #define DEBUG DEFAULT_DEBUG
+#endif
