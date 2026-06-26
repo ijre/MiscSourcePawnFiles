@@ -1,1 +1,1 @@
-## Just some scripts I regularly reuse; primarily for testing but I may begin submoduling them
+## These are a handful of files I use when working on SourceMod plugins, most of which I use regularly (or regularly use once per project)
